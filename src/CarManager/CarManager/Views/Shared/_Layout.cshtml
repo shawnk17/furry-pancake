@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - CCA Car Manager</title>
+    <title>@ViewData["Title"] -Car Manager</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -14,6 +14,7 @@
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+        <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
     </environment>
 </head>
 <body>
@@ -31,8 +32,8 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About">About Car</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact Me</a></li>
                     <li><a asp-controller="CarManager" asp-action="Index">Car Manager</a></li>
                 </ul>
                 @await Html.PartialAsync("_LoginPartial")
@@ -43,7 +44,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - CarManager</p>
+            <p>&copy;2017-2018 Shawnsville, LLC</p>
         </footer>
     </div>
 
@@ -53,6 +54,7 @@
         <script src="~/js/site.js" asp-append-version="true"></script>
     </environment>
     <environment exclude="Development">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
         <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
                 asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
                 asp-fallback-test="window.jQuery"

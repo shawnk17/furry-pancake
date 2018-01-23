@@ -33,3 +33,39 @@
         display: none;
     }
 }
+
+
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+body {
+    background-color: rgba(135, 206, 250, 0.397);
+    font-family: 'Karla', sans-serif;
+    margin: auto;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.navbar {
+    padding: .5rem;
+    margin: 1rem;
+}
+
+.panel {
+    padding: .5rem;
+    margin-left: 2rem;
+}
+
+.btn {
+    margin-top: .5rem;
+}
+
+.img-thumbnail {
+    margin-right: 1rem;
+}
+
+footer {
+    clear: both;
+    background-color: palegoldenrod;
+}
