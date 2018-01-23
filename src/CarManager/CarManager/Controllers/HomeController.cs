@@ -22,17 +22,17 @@ namespace CarManager.Controllers
         {
             ViewData["Message"] = "Your application description page.";
 
-            var myCar = new Car
-            {
-                Year = 2015,
-                Make = "Honda",
-                Model = "Accord",
-                NumberOfDoors = 3
-            };
+            //var myCar = new Car
+            //{
+            //    Year = 2015,
+            //    Make = "Honda",
+            //    Model = "Accord",
+            //    NumberOfDoors = 3
+            //};
 
-            _vehRepo.Add(myCar);
+            //_vehRepo.Add(myCar);
 
-            return View(myCar);
+            return View(_vehRepo.ListAll());
         }
 
         [Authorize]

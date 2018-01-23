@@ -1,11 +1,12 @@
-﻿@model CCALearn.VehicleLibrary.Car
+﻿@model IEnumerable<CCALearn.VehicleLibrary.Vehicle>
 @{
     ViewData["Title"] = "About";
 }
 <h2>@ViewData["Title"]</h2>
 <h3>@ViewData["Message"]</h3>
-
 <p>Car Info</p>
 
-<h1>@Model.GetFullName()</h1>
-<p>@Model.NumberOfDoors Doors</p>
+@foreach (var car in Model)
+{
+    <h1>@car.GetFullName()</h1>
+}
